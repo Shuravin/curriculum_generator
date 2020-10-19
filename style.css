@@ -1,0 +1,187 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: darkcyan;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Containers */
+.container {
+  margin: 5rem auto;
+  padding: 2rem 3rem;
+  max-width: 1000px;
+  background: #f4f4f4;
+  border: 1px solid #333;
+  border-radius: 1rem;
+}
+
+/* Horlines */
+.horline {
+  width: 100%;
+  height: 1px;
+  background: #999;
+  margin: 1rem auto;
+}
+
+/* Form Elements */
+input,
+select,
+button {
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-style: inherit;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-clear:hover {
+  background: lightcoral;
+}
+
+.btn-print:hover {
+  background: blueviolet;
+  color: #fff;
+}
+
+.btn-copy:hover {
+  background: gold;
+}
+
+.btn-save:hover {
+  background: lightgreen;
+}
+
+/* Header */
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Project Info */
+.project-info {
+  margin: 0 auto;
+}
+
+.project-info form > input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.project-info .project-info--flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-info .project-info--flex input {
+  margin-right: 1rem;
+}
+
+.project-info .project-info--flex input:first-child {
+  flex: 4;
+}
+
+/* Table */
+.table .table-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.table .table-header h2 {
+  flex: 4;
+}
+
+.table .table-header .flex {
+  margin-left: 1rem;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  border-spacing: 0;
+}
+
+table td {
+  padding: 0.5rem 0.5rem;
+  border: none;
+  margin: 0;
+}
+
+table td:focus {
+  background: rgb(199, 233, 245);
+  outline: 1px dashed #333;
+}
+
+table td[contenteditable] {
+  cursor: text;
+}
+
+table thead {
+  background: lightgray;
+  font-weight: 600;
+}
+
+table tbody tr:nth-child(2n + 2) {
+  background: rgb(228, 228, 228);
+}
+
+table tfoot {
+  background: lightgray;
+  font-weight: 600;
+}
+
+table tfoot .table-total {
+  text-align: right;
+}
+
+#deleterow {
+  color: pink;
+}
+
+#deleterow:hover {
+  color: lightcoral;
+}
+
+#addrow {
+  color: lightgreen;
+}
+
+#addrow:hover {
+  color: green;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}

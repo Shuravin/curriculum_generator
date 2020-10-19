@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Maker</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Curriculum Maker</h1>
+        <div class="horline"></div>
+      </header>
+      <!-- Project Info -->
+      <section class="project-info">
+        <form>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            autocomplete="off"
+            placeholder="Project title"
+          />
+          <div class="project-info--flex">
+            <input
+              type="url"
+              name="url"
+              id="url"
+              autocomplete="off"
+              placeholder="Project URL"
+            />
+            <input
+              type="number"
+              name="days"
+              id="days"
+              min="0"
+              autocomplete="off"
+              placeholder="Days to study"
+            />
+            <select name="difficulty" id="difficulty">
+              <option value="" disabled selected>Choose difficulty</option>
+              <option value="1">1 - Easy</option>
+              <option value="2">2 - Medium</option>
+              <option value="3">3 - Hard</option>
+            </select>
+          </div>
+        </form>
+        <div class="horline"></div>
+      </section>
+      <!-- Table -->
+      <section class="table">
+        <!-- Table Header -->
+        <div class="table-header">
+          <h2 id="table-title">Lorem ipsum dolor sit amet consectetur.</h2>
+          <div class="flex">
+            <button class="btn-clear" id="clear">Clear</button>
+            <button class="btn-print" id="print">Print</button>
+            <button class="btn-copy" id="copy">Copy</button>
+            <button class="btn-save" id="save">Save</button>
+          </div>
+        </div>
+        <p>
+          URL:
+          <a href="https://www.google.com" target="_black" id="table-url"
+            >www.google.com</a
+          >
+        </p>
+        <!-- Table Body -->
+        <table>
+          <thead>
+            <tr>
+              <td contenteditable="">Topic/Title</td>
+              <td contenteditable="">Subtitle</td>
+              <td contenteditable="">Volume</td>
+              <td contenteditable="">Days</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="">Sample title 1</td>
+              <td contenteditable="">Sample subtitle</td>
+              <td contenteditable="">1 unit</td>
+              <td contenteditable="">1</td>
+            </tr>
+            <tr>
+              <td contenteditable="">Sample title 2</td>
+              <td contenteditable="">Sample subtitle</td>
+              <td contenteditable="">1 unit</td>
+              <td contenteditable="">1</td>
+            </tr>
+            <tr>
+              <td contenteditable="">Sample title 3</td>
+              <td contenteditable="">Sample subtitle</td>
+              <td contenteditable="">1 unit</td>
+              <td contenteditable="">1</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" class="table-total">Total</td>
+              <td id="total-volume"></td>
+              <td id="total-days"></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="table-button">
+          <a href="#" id="deleterow"><i class="fas fa-minus-circle"></i></a>
+          <a href="#" id="addrow"><i class="fas fa-plus-circle"></i></a>
+        </div>
+      </section>
+    </div>
+    <!-- Scripts -->
+    <script src="app.js"></script>
+  </body>
+</html>
