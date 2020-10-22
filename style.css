@@ -103,12 +103,12 @@ button {
   justify-content: space-between;
 }
 
-.project-info .project-info--flex input {
-  margin-right: 1rem;
+.project-info .project-info--flex *:not(:first-child) {
+  margin-left: 1rem;
 }
 
 .project-info .project-info--flex input:first-child {
-  flex: 4;
+  flex: 5;
 }
 
 /* Table */
@@ -163,6 +163,11 @@ table tfoot {
 
 table tfoot .table-total {
   text-align: right;
+}
+
+/* Small Buttons */
+.table-button {
+  text-align: center;
 }
 
 #deleterow {

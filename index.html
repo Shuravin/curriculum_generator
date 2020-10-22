@@ -49,6 +49,11 @@
               placeholder="Days to study"
             />
             <select name="difficulty" id="difficulty">
+              <option value="" disabled selected>Content Type</option>
+              <option value="book">Book</option>
+              <option value="video">Video / MOOC</option>
+            </select>
+            <select name="difficulty" id="difficulty">
               <option value="" disabled selected>Choose difficulty</option>
               <option value="1">1 - Easy</option>
               <option value="2">2 - Medium</option>
@@ -114,7 +119,7 @@
             </tr>
           </tfoot>
         </table>
-        <div class="table-button">
+        <div class="table-button hidden">
           <a href="#" id="deleterow"><i class="fas fa-minus-circle"></i></a>
           <a href="#" id="addrow"><i class="fas fa-plus-circle"></i></a>
         </div>
